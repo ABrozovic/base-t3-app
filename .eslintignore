@@ -1,14 +1,14 @@
-**/node_modules/*
+\*_/node_modules/_
 dist
 
 coverage
-**/.next/*
-*.json
-*.lock
-*.css
-*.scss
-**/out/*
+**/.next/\*
+_.json
+_.lock
+_.css
+_.scss
+**/out/\*
 
 next-env.d.ts
-/src/pages/_app.tsx
+/src/pages/\_app.tsx
 /src/server/db/client.ts
