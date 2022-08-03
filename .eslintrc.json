@@ -9,7 +9,7 @@
     "next",
     "next/core-web-vitals",
     "eslint:recommended",
-    "eslint:recommended",
+    "plugin:storybook/recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
@@ -32,5 +32,13 @@
   },
   "rules": {
     "no-unused-vars": [2, { "args": "after-used", "argsIgnorePattern": "^_" }]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["src/stories/*.tsx"],
+      "rules": {
+        "@typescript-eslint/await-thenable": "off"
+      }
+    }
+  ]
 }
