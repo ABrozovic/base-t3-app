@@ -9,9 +9,10 @@
     },
     {
       "name": "T3: Debug client-side",
-      "type": "chrome",
       "request": "launch",
-      "url": "http://localhost:3000"
+      "type": "chrome",
+      "url": "http://localhost:3080",
+      "webRoot": "${workspaceFolder}"
     },
     {
       "name": "T3: Debug full stack",
@@ -23,7 +24,11 @@
         "pattern": "started server on .+, url: (https?://.+)",
         "uriFormat": "%s",
         "action": "debugWithChrome"
-      }
+      },
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!**/node_modules/**"
+      ]
     }
   ]
 }
