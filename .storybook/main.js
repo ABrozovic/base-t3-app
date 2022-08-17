@@ -5,6 +5,15 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
+    // 'storybook-addon-next',
+    // {
+    //   name: "storybook-addon-next",
+    //   options: {
+    //     // nextConfigPath: './../next.config.mjs'
+        
+    //     nextConfigPath: path.resolve(__dirname, "../next.config.js"),
+    //   },
+    // },
   ],
   framework: "@storybook/react",
   core: {

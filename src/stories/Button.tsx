@@ -1,5 +1,4 @@
 
-import Image from "next/image";
 import React from "react";
 import "./button.css";
 
@@ -41,8 +40,7 @@ export const Button = ({
     ? "storybook-button--primary"
     : "storybook-button--secondary";
   return (
-    <>
-    <Image  alt="f" width={48} height={48} src={"https://i.stack.imgur.com/Awiv5.png?s=64&g=1"}/>
+    <>    
     <button
       type="button"
       className={["storybook-button", `storybook-button--${size}`, mode].join(
